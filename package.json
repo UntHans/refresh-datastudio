@@ -1,0 +1,14 @@
+{
+  "name": "refresh-datastudio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "refresh-datastudio": "nightwatch -t main/test/run/run_refresh.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+"chromedriver": "^2.42"
+ }
+}
