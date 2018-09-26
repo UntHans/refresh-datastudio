@@ -36,10 +36,11 @@ module.exports = {
             .waitForElementVisible('@FuseDashboardTitle', 10000)
             .waitForElementVisible('@RefreshButton', 5000)
             .verify.elementPresent('@RefreshButton', 5000)
+        browser.pause(2000);
+        browser.page.elementsDataStudio()
             .click('@RefreshButton');
-        browser.pause(10000);
+        browser.pause(5000);
 
-        console.log("Data Studio Refreshed");
 
         // for (x = 0; x < 1440; x++) {
         //
