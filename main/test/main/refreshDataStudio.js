@@ -34,14 +34,18 @@ module.exports = {
         browser.pause(3000);
         browser.page.elementsDataStudio()
             .waitForElementVisible('@FuseDashboardTitle', 10000);
-
-        for (x = 0; x < 1440; x++) {
-
         browser.pause(60000);
         browser.page.elementsDataStudio()
             .assert.elementPresent('@RefreshButton', 5000)
             .click('@RefreshButton');
-        }
+
+        // for (x = 0; x < 1440; x++) {
+        //
+        // browser.pause(60000);
+        // browser.page.elementsDataStudio()
+        //     .assert.elementPresent('@RefreshButton', 5000)
+        //     .click('@RefreshButton');
+        // }
 
 
     },
