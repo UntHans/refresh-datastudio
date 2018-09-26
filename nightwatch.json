@@ -29,7 +29,7 @@
         "path" : ""
       },
       "globals" : {
-        "gUsername" : "%some_variable %",
+        "gUsername" : "${ENV_USER}",
         "gPassword" : "${ENV_PASS}",
         "gURL" : "${ENV_URL}"
       },
