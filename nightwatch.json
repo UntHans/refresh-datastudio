@@ -28,6 +28,11 @@
         "enabled" : false,
         "path" : ""
       },
+      "globals" : {
+        "gUsername" : "${ENV_USER}",
+        "gPassword" : "${ENV_PASS}",
+        "gURL" : "${ENV_URL}"
+      },
       "desiredCapabilities": {
         "browserName": "chrome",
         "acceptSslCerts": true

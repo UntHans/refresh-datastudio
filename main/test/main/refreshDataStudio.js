@@ -14,7 +14,7 @@ module.exports = {
             .click('@GEInput');
         browser.pause(2000);
         browser.page.elementsDataStudio()
-            .setValue('@GEInput', upu.u)
+            .setValue('@GEInput', globals.gUsername)
             .click('@NextButton');
         browser.pause(2000);
         browser.page.elementsDataStudio()
@@ -22,11 +22,11 @@ module.exports = {
             .click('@GPInput');
         browser.pause(2000);
         browser.page.elementsDataStudio()
-            .setValue('@GPInput', upu.p)
+            .setValue('@GPInput', globals.gPassword)
             .click('@NextButton');
         browser
             .pause(1000)
-            .url(upu.u1);
+            .url(globals.gURL);
         browser.pause(3000);
         browser.page.elementsDataStudio()
             .waitForElementVisible('@FuseDashboardLink', 10000)

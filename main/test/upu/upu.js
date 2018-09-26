@@ -1,6 +1,6 @@
-const u = "qahannes2@gmail.com";
-const p = "Test@12345";
-const u1 = "https://datastudio.google.com/navigation/reporting";
+const u = "";
+const p = "";
+const u1 = "";
 
 module.exports = {
     u,
