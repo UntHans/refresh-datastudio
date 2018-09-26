@@ -33,8 +33,8 @@ module.exports = {
             .click('@FuseDashboardLink');
         browser.pause(3000);
         browser.page.elementsDataStudio()
-            .waitForElementVisible('@FuseDashboardTitle', 10000);
-            .waitForElementVisible('@RefreshButton', 5000);
+            .waitForElementVisible('@FuseDashboardTitle', 10000)
+            .waitForElementVisible('@RefreshButton', 5000)
             .verify.elementPresent('@RefreshButton', 5000)
             .click('@RefreshButton');
         browser.pause(10000);
