@@ -10,24 +10,28 @@ module.exports = {
             .waitForElementVisible('body', 40000)
             .maximizeWindow();
         browser.page.elementsDataStudio()
-            .waitForElementVisible('@GoogleEmailInput', 10000)
-            .click('@GoogleEmailInput');
+            .waitForElementVisible('@GEInput', 10000)
+            .click('@GEInput');
         browser.pause(2000);
         browser.page.elementsDataStudio()
-            .setValue('@GoogleEmailInput', upu.u)
+            .setValue('@GEInput', upu.u)
             .click('@NextButton');
         browser.pause(2000);
         browser.page.elementsDataStudio()
-            .waitForElementVisible('@GooglePassword', 10000)
-            .click('@GooglePassword');
+            .waitForElementVisible('@GPInput', 10000)
+            .click('@GPInput');
         browser.pause(2000);
         browser.page.elementsDataStudio()
-            .setValue('@GooglePassword', upu.p)
+            .setValue('@GPInput', upu.p)
             .click('@NextButton');
         browser
             .pause(1000)
             .url(upu.u1);
-        browser.pause(5000);
+        browser.pause(3000);
+        browser.page.elementsDataStudio()
+            .waitForElementVisible('@FuseDashboardLink', 10000)
+            .click('@FuseDashboardLink');
+        browser.pause(3000);
         browser.page.elementsDataStudio()
             .waitForElementVisible('@FuseDashboardTitle', 10000);
 
