@@ -2,7 +2,7 @@
 # Created by https://www.gitignore.io/api/node,windows
 
 globals/globals-*.js
-globals/globals.js*
+globals/*.js
 
 
 ### Node ###
