@@ -1,6 +1,6 @@
 var chromedriver = require('chromedriver');
-var username = "test";
-var password = "test2";
+var username = "qahannes2@gmail.com";
+var password = "Test@12345";
 var url = "https://datastudio.google.com/navigation/reporting";
 
 module.exports = {
