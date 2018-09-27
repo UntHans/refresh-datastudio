@@ -1,7 +1,7 @@
 var chromedriver = require('chromedriver');
-var username = "test-value";
-var password = "test-pass";
-var url = "test";
+var username = "qahannes2@gmail.com";
+var password = "Test@12345";
+var url = "https://datastudio.google.com/navigation/reporting";
 
 module.exports = {
 
