@@ -5,7 +5,7 @@
 
   <testsuite name="run_refresh"
     errors="1" failures="0" hostname="" id="" package="run_refresh" skipped="0"
-    tests="1" time="0.02400" timestamp="Wed, 26 Sep 2018 15:04:14 GMT">
+    tests="1" time="0.02400" timestamp="Thu, 27 Sep 2018 06:17:54 GMT">
   
     <testcase name="Refresh Data Studio Page" classname="run_refresh" time="0.02400" assertions="0">
     </testcase>
@@ -15,10 +15,8 @@
     <system-err>
         Error while running [Run Refresh / Refresh Data Studio Page]:
 
-  Error: GoogleEmailInput was not found in &#34;elementsDataStudio&#34;. Available elements: GEInput,NextButton,GPInput,DataStudioTitle,FuseDashboardLink,FuseDashboardTitle,RefreshButton
-    at getElement (C:\Users\hannesv\Desktop\refresh-datastudio\node_modules\nightwatch\lib\page-object\command-wrapper.js:13:13)
-    at Object.setValue (C:\Users\hannesv\Desktop\refresh-datastudio\node_modules\nightwatch\lib\page-object\command-wrapper.js:81:32)
-    at Object.Refresh Data Studio Page (C:\Users\hannesv\Desktop\refresh-datastudio\main\test\main\refreshDataStudio.js:17:14)
+  ReferenceError: globals is not defined
+    at Object.Refresh Data Studio Page (C:\Users\hannesv\Desktop\refresh-datastudio\main\test\main\refreshDataStudio.js:17:35)
     at Object.Refresh Data Studio Page (C:\Users\hannesv\Desktop\refresh-datastudio\main\test\run\run_refresh.js:6:43)
     at Module.call (C:\Users\hannesv\Desktop\refresh-datastudio\node_modules\nightwatch\lib\runner\module.js:62:34)
     at C:\Users\hannesv\Desktop\refresh-datastudio\node_modules\nightwatch\lib\runner\testcase.js:70:29
@@ -26,6 +24,8 @@
     at self.promiseDispatch.done (C:\Users\hannesv\Desktop\refresh-datastudio\node_modules\q\q.js:863:30)
     at Promise.promise.promiseDispatch (C:\Users\hannesv\Desktop\refresh-datastudio\node_modules\q\q.js:796:13)
     at C:\Users\hannesv\Desktop\refresh-datastudio\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\hannesv\Desktop\refresh-datastudio\node_modules\q\q.js:137:13)
+    at flush (C:\Users\hannesv\Desktop\refresh-datastudio\node_modules\q\q.js:125:13)
     </system-err>
   
 

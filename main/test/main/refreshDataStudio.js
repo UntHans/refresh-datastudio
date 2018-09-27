@@ -1,12 +1,12 @@
 var page = require('../../page/elementsDataStudio.js');
-var upu = require('../upu/upu.js');
+var globals = require('../../../globals/globals.js');
 
 module.exports = {
     'Refresh Data Studio Page': function(browser){
 
 
         browser
-            .url("https://datastudio.google.com/reporting")
+            .url(globals.url)
             .waitForElementVisible('body', 40000)
             .maximizeWindow();
         browser.page.elementsDataStudio()
@@ -14,7 +14,7 @@ module.exports = {
             .click('@GEInput');
         browser.pause(2000);
         browser.page.elementsDataStudio()
-            .setValue('@GEInput', global.gUsername)
+            .setValue('@GEInput', globals.username)
             .click('@NextButton');
         browser.pause(2000);
         browser.page.elementsDataStudio()
@@ -22,11 +22,11 @@ module.exports = {
             .click('@GPInput');
         browser.pause(2000);
         browser.page.elementsDataStudio()
-            .setValue('@GPInput', global.gPassword)
+            .setValue('@GPInput', globals.password)
             .click('@NextButton');
         browser
             .pause(1000)
-            .url(global.gURL);
+            .url(globals.url);
         browser.pause(3000);
         browser.page.elementsDataStudio()
             .waitForElementVisible('@FuseDashboardLink', 10000)
