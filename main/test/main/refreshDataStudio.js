@@ -6,7 +6,7 @@ module.exports = {
 
 
         browser
-            .url(globals.url)
+            .url("https://datastudio.google.com/navigation/reporting")
             .waitForElementVisible('body', 40000)
             .maximizeWindow();
         browser.page.elementsDataStudio()
